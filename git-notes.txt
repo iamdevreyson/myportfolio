@@ -1,0 +1,31 @@
+Problem for "cant push refs to remote. try running "pull" first to integrate your changes"
+
+1. Try git pull origin main
+
+if this shows
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+type git remote -v then git remote add origin <your-repo-url> 
+for example: git remote add origin https://github.com/your-username/your-repo.git
+
+then type git pull origin main
+
+If this shows after adding the remote 
+
+$ git pull origin main
+From https://github.com/iamdevreyson/slidnetsystemphilcorp
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+
+Type
+git pull origin main --allow-unrelated-histories
+
+and after that commit the files you get from GitHub then try to push it again 
+
+
+HOW TO PULL CHANGES MADE FROM OTHER DEVICES THAT HAVE BEEN SENT TO GITHUB REPO?
+1. type git pull
+if that doesn't work
+2. type git branch --set-upstream-to=origin/main
