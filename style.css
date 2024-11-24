@@ -46,6 +46,7 @@
 .nav-item a {
     color: #000000;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .nav-link {
@@ -126,7 +127,8 @@
 }
 
 .introduction .container-1 .paragraph {
-    
+    font-size: 17px;
+    color: #737b87;
 }
 
 /* Next Line */
