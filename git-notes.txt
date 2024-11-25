@@ -26,6 +26,7 @@ and after that commit the files you get from GitHub then try to push it again
 
 
 HOW TO PULL CHANGES MADE FROM OTHER DEVICES THAT HAVE BEEN SENT TO GITHUB REPO?
-1. type git pull
+1. type git clone add <your-repo-url> 
+2. type git pull <your-repo-url> 
 if that doesn't work
-2. type git branch --set-upstream-to=origin/main
+3. type git branch --set-upstream-to=origin/main
