@@ -171,6 +171,33 @@
     }
 }
 
+@media (min-width: 426px) and (max-width: 992px) {
+    .navbar {
+        margin: 10px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 16px;
+        margin: 0 0 0 1rem;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+        font-size: 1rem;
+        margin: 0 30px 0 0;
+    }
+
+    .navbar-toggler:focus,
+    .btn-close:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+    .get-started a button {
+        margin-right: 20px;
+    }
+}
+
 /* Section Banner Responsive */
 
 @media (min-width: 320px) and (max-width: 769px) {
